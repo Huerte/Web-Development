@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="sidebar">
+                <li onclick='closeSideBar()'><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="navigator-field"><a href="#">Home</a></li>
+                <li class="navigator-field"><a href="#squad-roster">Squad Roster</a></li>
+                <li class="navigator-field"><a href="#achivement">Achievements</a></li>
+                <li class="navigator-field"><a href="#community">Community</a></li>
+            </ul>
+
+            <ul id="navbar">
+                <li>GEN. SQUAD</li>
+                <li class="navigator-field"><a href="#">Home</a></li>
+                <li class="navigator-field"><a href="#squad-roster">Squad Roster</a></li>
+                <li class="navigator-field"><a href="#achivement">Achievements</a></li>
+                <li class="navigator-field"><a href="#community">Community</a></li>
+                <li onclick='openSideBar()' id="menu-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sub-header">
+            <div>
+                <h2>Welcome to GEN Squad</h2>
+                <p>Your ultimate Moblile Legends: Bang Bang squad</p>
+                <div id="sub-header-btn">
+                    <button>Join Now</button>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div id="roster-h">
+                <h3>Squad Roster</h3>
+            </div>
+            <div class="photos">
+                <!-- <img src="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Screenshot_20241029-065902.png?raw=true" alt="image">
+                <img src="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Screenshot_20241029-065839.png?raw=true" alt="image">
+                <img src="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Screenshot_20241029-065814.png?raw=true" alt="image">
+                <img src="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Screenshot_20241029-065752.png?raw=true" alt="image">
+                <img src="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Screenshot_20241029-065927.png?raw=true" alt="image">
+                <img src="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Screenshot_20241029-065627.png?raw=true" alt="image">
+                <img src="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Screenshot_20241029-070048.png?raw=true" alt="image">
+                <img src="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Screenshot_20241029-065647.png?raw=true" alt="image"> -->
+            </div>
+            </section>
+
+            
+            
+            <section id="merch">
+                <h2>Merchandise</h2>
+                <div id="merch_image">
+                    <!-- <img src="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Picsart_24-10-29_12-51-16-418.png?raw=true" alt="product image">
+                    <img src="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Picsart_24-10-29_09-36-07-603.png?raw=true" alt="product image"> -->
+                </div>
+                <h3>Product Description:</h3>
+                <ul>
+                    <li>Our modernize squad T-Shirt is made from premium cotton that can be only get from 
+                        far-far away galaxy, featuring the iconic logo and master 
+                        joseph depth expression. Available in multiple colors and 
+                        sizes.
+                    </li>
+                </ul> 
+            </section>
+            
+            
+            <section id="community">
+                <h2>Community</h2>
+                <p>Our players make this game great! Join others to share your stories, tips, and stay connected.</p>
+                
+                <h3>Community Forums</h3>
+                <p>Talk with other fans in our <a href="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/Screenshot_20241029-085827~2.png?raw=true">forums</a>. Chat about gameplay tips, fan art, or ideas for new updates.</p>
+                
+                <h3>Follow Us on Social Media</h3>
+                <ul>
+                    <li><a href="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/lv_0_20240919170308.gif?raw=true">Facebook</a> – Share your builds and favorite game moments.</li>
+                    <li><a href="https://raw.githubusercontent.com/JZProjects/2048-Game-using-tkinter/refs/heads/main/1687061644835%7E2.jpg?raw=true">Twitter</a> – Get news on updates and see what others are up to.</li>
+                    <li><a href="https://github.com/JZProjects/2048-Game-using-tkinter/blob/main/jian_serious_mode.jpeg?raw=true">Discord</a> – Join our Discord server for live chats, team-ups, and special events.</li>
+                </ul>
+            </section>
+            
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Have questions or feedback? Reach out to us via our <a href="https://www.facebook.com/profile.php?id=100089570697084">official account</a>.</p>
+            </section>
+            
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GEN SQUAD. All rights reserved.</p>       
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

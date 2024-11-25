@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #141b21;
+    color: #ffffff;
+    font-size: small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    background-color: #081227;
+    padding-bottom: 3vh;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+    color: whitesmoke;
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    color: #ffffff;
+    width: 160px;
+    font-weight: 900px;
+    font-size: 25px;
+    font-family: "Rampart One", sans-serif;
+}
+
+.navigator-field a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+    margin: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease-out;
+}
+
+.navigator-field:hover {
+    transform: scale(1.1);
+    background-color: #53677c99;
+}
+
+#sidebar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: #184e7854;
+    backdrop-filter: blur(5px);
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 0px 0px 0px 50px;
+    z-index: 999;
+}
+
+#sidebar li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 30px;
+}
+
+#menu-btn {
+    display: none;
+}
+
+@media(max-width: 600px){
+    #menu-btn {
+        display: flex;
+    }
+
+    #navbar .navigator-field {
+        display: none;
+    }
+}
+
+.sub-header {
+    display: flex;
+    background-color: #151f34;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    height: 30vh;
+    width: 100%;
+}
+
+.sub-header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sub-header-btn {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 80vw;
+}
+
+#sub-header-btn button {
+    width: 100%;
+    border-radius: 10vw;
+    border-style: none;
+    height: 5vh;
+    font-size: 1em;
+    font-weight: 800;
+    color: #151f34;
+}
+
+#sub-header-btn button:first-child {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ffffff;
+}
+
+img {
+    width: 50px;
+}
+
+section {
+    clear: both;
+    margin: 1rem;
+}
+
+#about img {
+    width: 100px;
+}
+
+#squad-img {
+    float: left;
+}
+
+#joseph-img {
+    float: right;
+}
+
+#about p {
+    font-size: small;
+}
+
+#gallery {
+    position: relative;
+    width: 100%;
+    min-height: 30vh;
+}
+
+#roster-h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photos {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    gap: 10px;
+}
+
+.photos img {
+    scroll-snap-align: start;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#merch_image {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#merch_image img {
+    width: 50%;
+}

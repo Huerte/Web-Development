@@ -1,0 +1,43 @@
+/* Container styling */
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Hide the actual checkbox */
+#button {
+    display: none;
+}
+
+/* Style the label as a toggle switch */
+.box {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Create the circle inside the switch */
+.box::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    transition: transform 0.3s;
+}
+
+/* Change the background color and move the circle when checked */
+#button:checked + .box {
+    background-color: #42eb9e;
+}
+
+#button:checked + .box::before {
+    transform: translateX(30px);
+}

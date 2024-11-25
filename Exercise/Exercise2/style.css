@@ -1,0 +1,70 @@
+span {
+    margin: 5%;
+}
+
+#container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: padding 0.3s;
+}
+
+.buttons:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pages {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container2 button {
+    color: white;
+    background-color: green;
+    border: 1px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    transition: padding 0.4s;
+}
+
+#container2 button:hover {
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+
+#container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container3 button {
+    color: white;
+    background-color: green;
+    border: 1px;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 2px 2px 3px gray;
+    transition: block-shadow 0.4s;
+}
+
+#container3 button:active {
+    box-shadow: none;
+    margin-left: 5px;
+    margin-top: 5px;
+}

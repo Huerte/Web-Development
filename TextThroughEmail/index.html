@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email Form</title>
+</head>
+<!--Currently not fixed-->
+<body>
+    <form action="send_email.php" method="post">
+        <label for="recipientEmail">Recipient Email:</label>
+        <input type="email" id="recipientEmail" name="recipientEmail" required>
+        
+        <label for="yourEmail">Your Email:</label>
+        <input type="email" id="yourEmail" name="yourEmail" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

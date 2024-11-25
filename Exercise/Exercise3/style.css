@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#video-title {
+    font-size: 10px;
+    margin: 0;
+}
+
+header p {
+    font-size: 8px;
+    color: #696464;
+}
+
+#video-info {
+    margin-top: 5px;
+}
+
+#video-uploader {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#video-details {
+    width: 40%;
+    line-height: 12 px;
+}
+
+#shop-invitation {
+    margin-top: 10%;
+    font-size: 9px;
+    background-color: rgb(239, 54, 54);
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    color: white;
+}
+
+#shop-invitation a {
+    text-decoration: none;
+    color: white;
+}
+
+#shop-invitation a:hover {
+    text-decoration: underline;
+}

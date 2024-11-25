@@ -1,0 +1,108 @@
+body {
+    background-image: url("img.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-section {
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    background-color: #235de513;
+    backdrop-filter: blur(6px);
+    border-top: 1px solid #8585850c;
+    border-left: 1px solid #8585850c;
+    border-radius: 40px;
+    box-shadow: 3px 3px 3px #00000065;
+    transition: box-shadow 0.2s ease-out;
+}
+
+.login-section h2 {
+    color: #22eef5d2;
+}
+
+.login-section h2::after {
+    content: "In";
+    color: #ea6363cd;
+    margin: 2px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+
+#username-field, #password-field {
+    width: 65%;
+    height: 20px;
+    margin: 3%;
+    border-radius: 15px;
+    border-style: none;
+    padding: 5px 6px 5px 6px;
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.114);
+    color: whitesmoke;
+}
+
+.input-field:hover {
+    box-shadow: 1px 1px 10px #1fe2d2aa;
+}
+
+#username-field:focus, #password-field:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px #f35e5ea0;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+#submit-btn {
+    cursor: pointer;
+    margin-top: 10px;
+    height: 25px;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 30%;
+    transition: background-color 0.1s ease-out;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    border: 1px solid #22eef5d2;
+}
+
+#submit-btn:hover {
+    box-shadow: 1px 1px 5px #5ca1c488;
+}
+
+#submit-btn:active {
+    background-color: #22eef5d2;
+}
+
+#forgot-password-link {
+    font-size: 8px;
+    margin-top: 10px;
+    text-decoration: underline white;
+}
+
+#create-account-link {
+    font-size: 12px;
+    margin-top: 10%;
+}
